@@ -1,0 +1,334 @@
+/* ********************* */
+/* general */
+/* ******************** */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body {
+    font-family: "Rubik", sans-serif;
+    line-height: 1;
+    font-weight: 400;
+    color: #555;
+    background-color: #f9f2e9;
+}
+/* ********************* */
+/* header */
+/* ******************** */
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color:#fff; */
+    padding: 1.5rem 4rem;
+    border-bottom: 1px solid #555;
+}
+.logo-box{
+    display: flex;
+    align-items: center;
+}
+.logo-img{
+    height: 6.5rem;
+}
+.logo-text-box{
+    margin-left: 1rem;
+}
+.versity-logo-heading{
+    color:#c47f23;
+    font-size: 4.2rem;
+    font-weight: 550;
+    line-height: 1.3;
+}
+.dept-logo-heading{
+    color: #333;
+    font-size: 2.2rem;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 1.3px;
+}
+.nav-box{
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    width: 55%;
+    margin-right: 3rem;
+}
+.navbar-links{
+    list-style: none;
+}
+.menu{
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-links a:link,
+.navbar-links a:visited{
+    text-decoration: none;
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: #333;
+    padding: 5px 3px;
+    transition: .3s;
+    
+}
+.navbar-links a:hover,
+.navbar-links a:active{
+    background-color: #c47f23;
+    color: #fff;
+    border-radius: 8px;
+}
+/* menu bar showing */
+input[type=checkbox]{
+    display: none;
+   } 
+   /*HAMBURGER MENU*/
+   .hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+   }
+/* APPLYING MEDIA QUERIES */
+@media (max-width: 768px) {
+    
+    .menu { 
+     display:none;
+     position: absolute;
+     background-color:#f9f2e9;
+     right: 0;
+     left: 0;
+     text-align: center;
+     margin-top: 18px; 
+     padding: 10px 0;
+    }
+    .menu li:hover,
+    .menu li:active {
+     display: inline-block;
+     background-color:#c47f23;
+     transition: 0.3s ease;
+        font-size: 1.5rem;
+        font-weight: 400;
+        border-radius: 2px;
+    }
+    .menu li{
+        line-height: 1.5;
+    }
+    .menu li a{
+        margin-bottom: 14px;
+        font-size: 1.4rem;
+        font-weight: 400;
+    }
+    input[type=checkbox]:checked ~ .menu{
+     display: block;
+    }
+    .hamburger {
+     display: block;
+    }
+    .header{
+        height: 6rem;
+        margin:0 4px;
+        padding: 10px 20px;
+    }
+    .logo-img{
+        width: 40px;
+        height: 40px;
+    }
+    .logo-text-box{
+        margin-left: 6px;
+        width: 25rem;
+    }
+    .versity-logo-heading{
+        color:#c47f23;
+        font-size: 1.8rem;
+        /* font-weight: 550;
+        line-height: 1.3; */
+    }
+    .dept-logo-heading{
+        color: #333;
+        font-size: 1.4rem;
+        letter-spacing: 0;
+        /* font-weight: 500;
+        line-height: 1.2;
+        letter-spacing: 1.3px; */
+    }
+    .student-box{
+        max-width: 400px;
+        margin: 80px auto;
+    }
+    .student-box .student{
+        font-size: 3rem;
+        font-weight: 600;
+        padding: 10px 40px;
+    }
+    .btn{
+        display: flex;
+        flex-direction: column;
+        align-items: center;   
+    }
+    .cpy{
+        padding-top: 200px;
+        padding-left: 16px;
+        padding-bottom: 5px;
+    }
+   
+}
+/* //////////////////////////// */
+
+
+.student-box{
+    max-width: 400px;
+    height: 600px;
+    margin: 40px auto;
+}
+.student{
+    font-size: 4rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 40px;
+}
+.btn{
+    list-style: none;   
+}
+.btn li{
+    line-height: 7rem;
+    /* margin-bottom: 20px; */
+    
+}
+.btn-link:link,
+.btn-link:visited{
+    font-size: 40px;
+    text-decoration: none;
+    font-size: 4rem;
+    color: #fff;
+    transition: all .3s;
+    background-color:#c47f23;
+    width: 300px;
+    padding:5px 10px;
+    border-radius: 9px;
+    
+}
+.btn-link:hover,
+.btn-link:active{
+    background-color: #fff;
+    color: #c47f23;
+
+}
+
+
+/* ///////////////////////////////////// */
+@media (max-width: 768px){
+    .banner{
+        height: 100px;
+        margin-top: .1rem;
+    }
+
+.contact-us,
+.about-us,
+.con-list{
+    margin-bottom: 1rem;
+    padding: 0;
+}
+.con-list .au-heading{
+    
+    font-weight: 700;
+    letter-spacing: 0;
+}
+.con-list ul li{
+    font-size: .5rem;
+    font-weight: 600;
+    letter-spacing: 0;
+}
+
+.au-heading{
+    font-size: 1.8rem;
+    letter-spacing: 0;
+    
+}
+.au-text{
+    margin-top:.8rem;
+    font-size:.8rem;
+    line-height:8px;
+}
+.auther{
+    /* margin: 3rem auto; */
+    padding:0;
+}
+
+.contri-heading{
+    font-size: 4rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
+.auther{
+    /* margin: 3rem auto; */
+    padding:0 1rem;
+}
+.loading-img{
+    height:400px;
+    width: 400px;
+}
+}
+
+.banner{
+    width: 100%;
+    height: 20rem;
+}
+.information-box{
+    padding: 2rem 14rem;
+}
+.contact-us,
+.about-us,
+.con-list{
+    margin-bottom: 4rem;
+}
+.con-list ul{
+    list-style-type:none;;
+}
+.con-list ul li{
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+
+.au-heading{
+    font-size: 4rem;
+    letter-spacing: .75rem;
+}
+.au-text{
+    font-size: 2rem;
+    line-height: 2.3rem;
+}
+.auther{
+    /* margin: 3rem auto; */
+    padding: 4.8rem 4.8rem;
+}
+.co{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contri-heading{
+    font-size: 4rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
+.loading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+.loading{
+    margin-top: 4rem;
+}
+.loading h2{
+    font-size: 4rem;
+}
+.loading h3{
+    font-size: 3rem;
+}
